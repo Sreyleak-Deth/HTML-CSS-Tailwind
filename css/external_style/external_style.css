@@ -1,0 +1,16 @@
+div{
+    width: 500px;
+    height: 300px;
+    padding: 16px;
+    margin: 20px;
+}
+
+.external_title{
+    background-color: blue;
+    color: white;
+}
+
+.sign_in{
+    background-color: gray;
+    color: white;
+}
