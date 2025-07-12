@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout 1</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            width: 900px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header, 
+        .footer {
+            background: lightblue;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .header {
+            height: 50px;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+        
+        .footer {
+            height: 40px;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+        
+        .main {
+            display: flex;
+            flex: 1;
+        }
+        
+        .inbox,
+        .message-list,
+        .message {
+            padding: 15px;
+            margin: 16px 8px 16px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .inbox {
+            background: lightgray;
+            width: 150px;
+            margin-left: 0;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+        
+        .message-list {
+            background: rgb(230, 255, 194);
+            width: 250px;
+            margin-left: 8px;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+        
+        .message {
+            background: #ffe9b5;
+            flex: 1;
+            margin-right: 0;
+            margin-left: 8px;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="main">
+            <div class="inbox">Inbox etc.</div>
+            <div class="message-list">Message list</div>
+            <div class="message">Message</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
